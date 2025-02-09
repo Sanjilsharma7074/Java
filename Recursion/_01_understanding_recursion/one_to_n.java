@@ -1,4 +1,4 @@
-package Understanding_recursion;
+package _01_understanding_recursion;
 import java.util.Scanner;
 public class one_to_n {
 
