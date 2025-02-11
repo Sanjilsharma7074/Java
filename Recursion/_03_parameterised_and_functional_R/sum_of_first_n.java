@@ -1,4 +1,4 @@
-package parameterised_and_functional_R;
+package _03_parameterised_and_functional_R;
 import java.util.Scanner;
 public class sum_of_first_n {
     //Finding the sum of first N natural numbers using the parameterised way.
