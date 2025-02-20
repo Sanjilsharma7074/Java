@@ -1,10 +1,10 @@
-package code;
+package Main;
 import java.util.Scanner;
 public class Ceiling {
     static int ceiling(int[] arr, int upper){
         int start = 0;
         int end = arr.length-1;
-        
+        if(upper > arr[arr.length - 1]) return -1;
         while(start<=end){
         int mid = start+(end-start)/2;
           if (arr[mid]==upper){
