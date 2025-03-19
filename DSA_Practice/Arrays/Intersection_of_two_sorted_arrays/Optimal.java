@@ -8,6 +8,17 @@ import java.util.Scanner;
 public class Optimal {
   static List<Integer> sortedArray(int[] a,int[] b, int n, int m){
     List <Integer> list = new ArrayList<>();
+    int i=0;
+    int j=0;
+    while(i<n && j<m){
+      if(a[i] < b[j]) i++;
+      else if(a[i] > b[j]) j++;
+      else{
+        list.add(a[i]);
+        i++;
+        j++;
+      }
+    }
 
     return list;
   }
