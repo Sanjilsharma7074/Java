@@ -22,7 +22,12 @@ class MyStack{
   }
   int  pop(){
     Node temp = top;
-    top = top.next;
+    if(size == 1){
+      top = null;
+    }
+    else{
+      top = top.next;
+    }
     size-=1;
     return temp.data;
   }
@@ -47,5 +52,9 @@ public class Implement_Stack_using_LL {
     arr.push(7);
     System.out.println(arr.top());
     System.out.println(arr.size());
+    System.out.println(arr.pop());
+    System.out.println(arr.pop());
+    System.out.println(arr.pop());
+    System.out.println(arr.pop());
   }
 }
