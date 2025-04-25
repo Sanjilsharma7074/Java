@@ -37,6 +37,15 @@ class MyStack{
 
 public class Implement_Stack_using_LL {
   public static void main(String[] args) {
-    
+    MyStack arr = new MyStack();
+    arr.push(4);
+    arr.push(2);
+    arr.push(3);
+    arr.push(1);
+    System.out.println(arr.top());
+    System.out.println(arr.pop());
+    arr.push(7);
+    System.out.println(arr.top());
+    System.out.println(arr.size());
   }
 }
