@@ -11,7 +11,7 @@ class Node{
 }
 
 class MyStack{
-  Node top = new Node(0);
+  Node top = null;
   int size = 0;
 
   void push(int x){

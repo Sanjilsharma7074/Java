@@ -1,8 +1,12 @@
 package Code;
 class MyStack{
   int top = -1;
-  int size = 10;
+  int size ;
   int[] st = new int[size];
+
+  MyStack(int size){
+    this.size = size;
+  }
   
   void push(int x){
     if(top == size-1) {
@@ -14,12 +18,18 @@ class MyStack{
   }
 
   int top(){
-    if(top == -1) System.out.println("Invalid value of top.");
+    if(top == -1){
+      System.out.println("Invalid value of top.");
+      return -1;
+    }
     return st[top];
   }
 
   int pop(){
-    if(top == -1) System.out.println("Invalid value of top.");
+    if(top == -1) {
+      System.out.println("Invalid value of top.");
+      return top;
+    }
     int temp = st[top];
     top-=1;
     return temp;
@@ -32,7 +42,7 @@ class MyStack{
 
 public class Implement_Stack_using_Arrays {
   public static void main(String[] args) {
-    MyStack st = new MyStack();
+    MyStack st = new MyStack(10);
     st.push(1);
     st.push(2);
     st.push(3);
